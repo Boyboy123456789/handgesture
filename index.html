@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE HAND GESTURE APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     </head>
+     <body>
+        <div class="container" id="div_radius">
+         <center>
+            <h1 class="btn btn-primary heading">HAND GESTURE RECOGNITION
+                 <br>
+                <span>&#128077;</span>
+                <span>&#128076;</span>
+                <span>&#129304;</span>
+                <span>&#9996;</span>
+             </h1>
+             
+             <br><br>
+             <b style="font-size: 20px; color:red ; font-variant: small-caps;">Simply click on allow when the pop-up appears
+             <br>
+             <b style="font-size: 20px; color:red ; font-variant: small-caps;">Do a hand gesture and know it's meaning</b>
+             <br>
+             <b id="style" style="font-size: 20px; color:red ; font-variant: small-caps;">This app is trained on
+                <span>&#128077;</span>
+                <span>&#128076;</span>
+                <span>&#129304;</span>
+                <span>&#9996;</span>
+             </b> </p>
+             <div class="col-md-4 col-sm-12 col-xs-12">
+                 <label>Webcam View -</label>
+                <div id="camera"></div>
+                <br><br>
+                <button class="btn btn-info" onclick="take_snapshot();">CAPTURE</button>
+             </div>
+
+             <div class="col-md-4 col-sm-12 col-xs-12">
+             <label style="color: green;font-family: cursive;" class="btn btn-warning">Prediction -</label>
+            <p class="emotion_name" id="prediction_1"></p>
+            <p class="emoji" id="update_emoji"></p>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot -</label>
+                <div id="result"></div>
+                <br>
+                <button onclick="check()" class="btn btn-success">Predict</button>
+            </div>
+            
+         </center>
+         </div>
+         <script src="main.js"></script>
+     </body>
+</html>

@@ -1,0 +1,20 @@
+span {
+    font-size: 30px;
+}
+.heading {
+    font-family: cursive;
+    font-size: 25px;
+    letter-spacing: 10px;
+    border-radius: 10px;
+}
+#camera,#result {
+    border: 3px;
+    border-style: dotted;
+    border-color:rgb(0, 60, 255);
+    width: 350px;
+    height: 310px;
+}
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+}
